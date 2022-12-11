@@ -1,10 +1,13 @@
-import logo from './logo.svg'
-import './App.css'
-import axios from 'axios'
-import { useEffect, useState } from 'react'
+import './index.css'
+import store from './lib/store'
+import { Provider } from 'react-redux'
 
 function App() {
-  return <>hello</>
+  return (
+    <Provider store={store}>
+      <div>hello</div>
+    </Provider>
+  )
 }
 
 export default App
