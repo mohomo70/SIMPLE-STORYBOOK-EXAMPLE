@@ -24,20 +24,20 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
             />
           </g>
         </svg>
-        <h1>Acme</h1>
+        <h1>سرفصل</h1>
       </div>
       <div>
         {user ? (
           <>
             <span className="welcome">
-              Welcome, <b>{user.name}</b>!
+              ! خوش آمدی  <b>{user.name}</b>
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            <Button size="large" onClick={onLogout} label="خروج" />
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button size="large" onClick={onLogin} label="ورود" />
+            <Button primary size="large" onClick={onCreateAccount} label="ثبت‌نام حساب کاربری" />
           </>
         )}
       </div>
